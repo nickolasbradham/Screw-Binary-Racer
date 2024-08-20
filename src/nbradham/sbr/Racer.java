@@ -1,4 +1,4 @@
-package nbradham.fbr;
+package nbradham.sbr;
 
 import java.awt.AWTException;
 import java.awt.GridLayout;
