@@ -31,7 +31,7 @@ final class Racer {
 			JFrame frame = new JFrame("Race Destroyer");
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			frame.setLayout(new GridLayout(0, 2));
-			frame.add(new JLabel("128 Bit X:", SwingConstants.RIGHT));
+			frame.add(new JLabel("128 Bit X: ", SwingConstants.RIGHT));
 			JTextField b1x = new JTextField(Short.toString(db1x), 3), b1y = new JTextField(Short.toString(db1y), 3),
 					b2x = new JTextField(String.valueOf(DEF_DB2X), 3), subY = new JTextField(Short.toString(dsubY), 3),
 					val = new JTextField("0", 3);
@@ -60,15 +60,17 @@ final class Racer {
 				}
 			});
 			frame.add(b1x);
-			frame.add(new JLabel("128 Bit Y:", SwingConstants.RIGHT));
+			frame.add(new JLabel("128 Bit Y: ", SwingConstants.RIGHT));
 			frame.add(b1y);
-			frame.add(new JLabel("64 Bit X:", SwingConstants.RIGHT));
+			frame.add(new JLabel("64 Bit X: ", SwingConstants.RIGHT));
 			frame.add(b2x);
-			frame.add(new JLabel("Submit Y:", SwingConstants.RIGHT));
+			frame.add(new JLabel("Submit Y: ", SwingConstants.RIGHT));
 			frame.add(subY);
+			frame.add(new JLabel("Value: ", SwingConstants.RIGHT));
 			val.requestFocus();
 			val.selectAll();
 			frame.add(val);
+			frame.add(new JLabel("Send to Game: ", SwingConstants.RIGHT));
 			JButton go = new JButton("Submit");
 			go.addActionListener(e -> {
 				short i = Short.parseShort(val.getText());
