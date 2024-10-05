@@ -77,6 +77,11 @@ final class Racer {
 				for (byte n = 7; n > -1; --n) {
 					if ((i >> n & 1) == 1) {
 						r.mouseMove(db1x + diff * (7 - n), db1y);
+						try {
+							Thread.sleep(1);
+						} catch (InterruptedException e1) {
+							e1.printStackTrace();
+						}
 						click();
 					}
 				}
