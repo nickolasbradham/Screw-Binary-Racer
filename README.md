@@ -9,7 +9,7 @@ This game clicks on the screen to enter things into the game so we have to tell 
 - `128 Bit X` is the X coordinate of the 128 bit (farthest left) toggle in game.
 - `128 Bit Y` is the Y coordinate of the 128 bit toggle in game.
 - `64 Bit X` is the X coordinate of the 64 bit toggle in game.
-- `Submit Y` is the Y cordinate of the Submit button in game.
+- `Submit Y` is the Y coordinate of the Submit button in game.
 - `Value` is the current value the game is asking for (during the minigame).
 ## Solving Binary Racer
 Once the program is setup you can start Binary Racer, switch back to this util and start entering the values the game is looking for into the value field.

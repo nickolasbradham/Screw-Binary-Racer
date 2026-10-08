@@ -72,7 +72,7 @@ final class Racer {
 			frame.add(val);
 			frame.add(new JLabel("Send to Game: ", SwingConstants.RIGHT));
 			JButton go = new JButton("Submit");
-			go.addActionListener(e -> {
+			go.addActionListener(_ -> {
 				short i = Short.parseShort(val.getText());
 				for (byte n = 7; n > -1; --n) {
 					if ((i >> n & 1) == 1) {
